@@ -19,15 +19,15 @@ This python scipt is used to calculate the reputation score of a twitter user ba
 - Index score for the number of re-tweets and likes
 
 ### twitter_reputation.ipynb
-This is a google colab file and is used for training and evaluationg different regression models.
-Train three regression models:
+We used different regression models to test its performance on our generated dataset. We train and evaluate our models using different regression models.
+Training and testing three regression models:
 1. Multilayr perceptron
 2. Deep neural network
 3. Linear regression
 ### twitter_credentials.py
-You need to authenticate yourself by providing the credentils given in this file.
+In order to extract the features of twitter users first you need to authenticate yourself by providing the credentils given in this file.
 ### twitter_user_names.txt
-This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. 
+This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. We remove the names of all those politicians whose accounts are private. In addition, all those politicians who has no followers/followings are not in the list. 
 
 ## References
 [1] https://stackoverflow.com/questions/38881314/twitter-data-to-csv-getting-error-when-trying-to-add-to-csv-file
