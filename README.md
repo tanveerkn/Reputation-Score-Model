@@ -21,7 +21,7 @@ This python scipt is used to calculate the reputation score of a twitter user ba
 ### twitter_reputation.ipynb
 This is a google colab file and is used for training and evaluationg different regression models.
 Train three regression models:
-1. Multilayr perceptron ![alt text][logo]
+1. Multilayr perceptron [a link][1]
 2. Deep neural network
 3. Linear regression
 ### twitter_credentials.py
@@ -30,5 +30,4 @@ You need to authenticate yourself by providing the credentils given in this file
 This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. 
 
 ## References
-
-[logo]: https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error
+[1] (https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error)
