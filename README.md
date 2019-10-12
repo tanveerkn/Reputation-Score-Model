@@ -1,10 +1,10 @@
 #      Trust and Believe – Should We?
 # Evaluating the Trustworthiness of Twitter Users
 
-This model is used to calculate the reputation score for a twittr user. The model is base on both the user level and content level entity for each twitter user. The details are given in the paper.
+This model is used to calculate the reputation score for a twitter user. The model is base on both the user level and content level entity for each twitter user. The details are given in the paper.
 
 ## Description
-These scripts are used to extract different features for twiteer user. These features are then used to calculate the reputation score for each twitter users. We generate a dataset for 500 twitter users and then used different regression models to find the one that best fit to our model.
+These scripts are used to extract different features for twitter user and are then used to calculate the reputation score for each twitter users. We generate a dataset for 500 twitter users and then used different regression models to find the one that best fit to our model.
 
 ## Organization
 The project consist of the following files:
@@ -20,6 +20,10 @@ This python scipt is used to calculate the reputation score of a twitter user ba
 
 ### twitter_reputation.ipynb
 This is a google colab file and is used for training and evaluationg different regression models.
+Train three regression models:
+1. Multilayr perceptron
+2. Deep neural Network
+3. Linear regression
 ### twitter_credentials.py
 You need to authenticate yourself by providing the credentils given in this file.
 ### twitter_user_names.txt
