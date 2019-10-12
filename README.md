@@ -11,7 +11,7 @@ The project consist of the following files:
 ### data_set.csv
 The datasetr consist of the 20 features of 500 twitter users including the reputation score for eah user. These features consist of both the user level and content level entities.
 ### feature_extraction.py
-This python scipt is used to calculate the reputation score of a twitter user based on
+This python scipt is used to calculate the reputation score of a twitter user based on [a link](https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error)
 
 - Social reputation of the user
 - Content score of the tweets
@@ -28,3 +28,5 @@ Train three regression models:
 You need to authenticate yourself by providing the credentils given in this file.
 ### twitter_user_names.txt
 This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. 
+
+##References
