@@ -31,5 +31,7 @@ This text file consist of all the 500 twitter user names. All of them are politi
 
 ## References
 [1]  https://stackoverflow.com/questions/38881314/twitter-data-to-csv-getting-error-when-trying-to-add-to-csv-file
+
 [2] (https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error)
+
 [3]  https://gallery.azure.ai/Notebook/Computing-Influence-Score-for-Twitter-Users-1
