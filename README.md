@@ -30,8 +30,12 @@ You need to authenticate yourself by providing the credentils given in this file
 This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. 
 
 ## References
-[1]  https://stackoverflow.com/questions/38881314/twitter-data-to-csv-getting-error-when-trying-to-add-to-csv-file
+[1] https://stackoverflow.com/questions/38881314/twitter-data-to-csv-getting-error-when-trying-to-add-to-csv-file
 
 [2] https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error
 
-[3]  https://gallery.azure.ai/Notebook/Computing-Influence-Score-for-Twitter-Users-1
+[3] https://gallery.azure.ai/Notebook/Computing-Influence-Score-for-Twitter-Users-1
+
+[4] https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html
+
+[5] https://towardsdatascience.com/deep-neural-networks-for-regression-problems-81321897ca33
