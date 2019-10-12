@@ -22,7 +22,7 @@ def authenticate_twitter_api():
 
     return tweepyApi
 # with open('list.txt', 'r') as targets_file:
-with open('Allusernames.txt', 'r') as targets_file:
+with open('twitter_user_names.txt', 'r') as targets_file:
      targets_list = targets_file.readlines()
 
 usernames = []
@@ -97,14 +97,6 @@ def content_reputation(mentions):
 def compute_features(tweets, mentions):
 
     feature_dict = {}
-    # print(len(mentions))
-    # print(mentions)
-    # print(len(mentions[0]))
-    # print(mentions[0])
-    # print(len(mentions[0][0]))
-    # print(mentions[0][0])
-    # print(type(mentions[0][0]['user']))
-    # print(mentions[0][0]['user'])
     user_data = mentions[0][0]['user']
     feature_dict["id_str"] = user_data["id_str"]
     feature_dict["screen_name"] = user_data["screen_name"]
@@ -152,27 +144,6 @@ def compute_features(tweets, mentions):
         if len(tweet["entities"]["urls"]):
             tweets_with_urls += 1
 
-        #
-        # if 'retweeted_status' in mentions[0][0]:
-        #     retweetedOthersTweets += 1
-        # elif int(mentions[0][0]['retweet_count']) > 0:
-        #     retweetCountList.append(int(mentions[0][0]['retweet_count']))
-        # if int(mentions[0][0]['favorite_count']) > 0:
-        #     likedByOtherCountList.append(int(mentions[0][0]['favorite_count']))
-        #
-        # if mentions[0][0]["in_reply_to_status_id"] or mentions[0][0]["in_reply_to_user_id"] or mentions[0][0]["in_reply_to_screen_name"]:
-        #     totalReplies += 1
-        # if len(mentions[0][0]["entities"]["user_mentions"]):
-        #     tweets_with_mentions += 1
-        # if len(mentions[0][0]["entities"]["hashtags"]):
-        #     tweets_with_hashtags += 1
-        # if len(mentions[0][0]["entities"]["symbols"]):
-        #     tweets_with_symbols += 1
-        # if len(mentions[0][0]["entities"]["urls"]):
-        #     tweets_with_urls += 1
-    # print("retweetedOthersTweets",retweetedOthersTweets)
-    #
-    #
     feature_dict["mention_by_others"] = len(mentions[1])
     feature_dict["retweet_ratio"] = float(len(retweetCountList)) / total_tweets
     feature_dict["liked_ratio"] = float(len(likedByOtherCountList)) / total_tweets
@@ -195,9 +166,6 @@ def compute_features(tweets, mentions):
 
 
 def get_all_tweets(screen_name):
-    #Twitter only allows access to a users most recent 3240 tweets with   this method
-
-    #authorize twitter, initialize tweepy
 
     api = authenticate_twitter_api()
 
@@ -214,10 +182,8 @@ def get_all_tweets(screen_name):
     oldest = alltweets[-1]["id"] - 1
 
 
-    while len(new_tweets) > 0:
-        # print ("getting tweets before %s" % (oldest))
+    while len(new_tweets) > 0:  
 
-        #all subsiquent requests use the max_id param to prevent duplicates
         new_tweets = api.user_timeline(screen_name = screen_name,count=200,max_id=oldest)
 
         #save most recent tweets
@@ -226,10 +192,6 @@ def get_all_tweets(screen_name):
         #update the id of the oldest tweet less one
         oldest = alltweets[-1]["id"] - 1
 
-        # print ("...%s tweets downloaded so far" % (len(alltweets)))
-    #
-    # #transform the tweepy tweets into a 2D array that will populate the csv
-    # # outtweets = [[tweet['id_str'], tweet['created_at'], tweet['text'].encode("utf-8")] for tweet in alltweets]
 
     user_data = alltweets[0]["user"]
     # print('UD',user_data)
