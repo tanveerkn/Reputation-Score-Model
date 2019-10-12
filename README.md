@@ -22,7 +22,7 @@ This python scipt is used to calculate the reputation score of a twitter user ba
 This is a google colab file and is used for training and evaluationg different regression models.
 Train three regression models:
 1. Multilayr perceptron
-2. Deep neural Network
+2. Deep neural network
 3. Linear regression
 ### twitter_credentials.py
 You need to authenticate yourself by providing the credentils given in this file.
