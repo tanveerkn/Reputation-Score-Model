@@ -1,17 +1,17 @@
 #      Trust and Believe – Should We?
 # Evaluating the Trustworthiness of Twitter Users
 
-This model is used to calculate the reputation score for a twitter user. The model is base on both the user level and content level entity for each twitter user. The details are given in the paper.
+This model is used to calculate the reputation score for a twitter user. The model is based on both the user level and content level entity of a twitter user. For each twitter user, we extract different features and used it to calculate his reputation score. The details for feature extraction and calculating the reputation scorre is given in the paper.
 
 ## Description
-These scripts are used to extract different features for twitter user and are then used to calculate the reputation score for each twitter users. We generate a dataset for 500 twitter users and then used different regression models to find the one that best fit to our model.
+These pyhthon scripts are used to extract different features for twitter user and are then used to calculate the reputation score for each twitter users. We generate a dataset for 500 twitter users and then used different regression models to find the one that best fit to our model.
 
 ## Organization
 The project consist of the following files:
 ### data_set.csv
-The datasetr consist of the 20 features of 500 twitter users including the reputation score for eah user. These features consist of both the user level and content level entities.
+The datasetr consist of the 20 features of 500 twitter users including the reputation score for eah user.
 ### feature_extraction.py
-This python scipt is used to calculate the reputation score of a twitter user based on cite
+This python scipt is used to calculate the reputation score of a twitter user and further used it to generate a dataset. The reputation score is based on:
 
 - Social reputation of the user
 - Content score of the tweets
