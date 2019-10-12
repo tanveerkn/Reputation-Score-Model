@@ -11,7 +11,7 @@ The project consist of the following files:
 ### data_set.csv
 The datasetr consist of the 20 features of 500 twitter users including the reputation score for eah user. These features consist of both the user level and content level entities.
 ### feature_extraction.py
-This python scipt is used to calculate the reputation score of a twitter user based on [a link](https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error)
+This python scipt is used to calculate the reputation score of a twitter user based on cite
 
 - Social reputation of the user
 - Content score of the tweets
@@ -21,7 +21,7 @@ This python scipt is used to calculate the reputation score of a twitter user ba
 ### twitter_reputation.ipynb
 This is a google colab file and is used for training and evaluationg different regression models.
 Train three regression models:
-1. Multilayr perceptron
+1. Multilayr perceptron ![alt text][logo]
 2. Deep neural network
 3. Linear regression
 ### twitter_credentials.py
@@ -29,4 +29,6 @@ You need to authenticate yourself by providing the credentils given in this file
 ### twitter_user_names.txt
 This text file consist of all the 500 twitter user names. All of them are politicians and most of them are from pakistan. 
 
-##References
+## References
+
+[logo]: https://stackoverflow.com/questions/48157259/python-tweepy-api-user-timeline-for-list-of-multiple-users-error
